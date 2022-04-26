@@ -1,5 +1,5 @@
 import os.path
-from unittest import TestCase
+from unittest import TestCase, main
 
 
 class TestMult(TestCase):
@@ -19,3 +19,7 @@ class TestMult(TestCase):
         self.assertEqual(6, mult(1, 6), "mult(1,6) should be 6!")
         self.assertEqual(mult(7, 5), mult(5, 7),
                          "mult(5,7) should be equal to mult(7,5)!")
+
+
+if __name__ == '__main__':
+    main()

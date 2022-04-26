@@ -1,5 +1,5 @@
 import os.path
-from unittest import TestCase
+from unittest import TestCase, main
 
 
 class TestFind(TestCase):
@@ -39,3 +39,6 @@ class TestFind(TestCase):
         self.assertTrue(b.find(25), "25 was added but not found")
         self.assertFalse(b.find(63), "63 was not added but found :/")
 
+
+if __name__ == '__main__':
+    main()
